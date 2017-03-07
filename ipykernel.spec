@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 4.5.2
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/2d/1b/eee47b5cd8b2fcdde587cad1e8d3f7eae7bdfa1d36a94ad316fc5fbee833/ipykernel-4.5.2.tar.gz
 Source0  : https://pypi.python.org/packages/2d/1b/eee47b5cd8b2fcdde587cad1e8d3f7eae7bdfa1d36a94ad316fc5fbee833/ipykernel-4.5.2.tar.gz
 Summary  : IPython Kernel for Jupyter
@@ -34,12 +34,12 @@ python components for the ipykernel package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1485736157
+export SOURCE_DATE_EPOCH=1488921812
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1485736157
+export SOURCE_DATE_EPOCH=1488921812
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
