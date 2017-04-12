@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 4.6.1
-Release  : 4
+Release  : 5
 URL      : https://pypi.python.org/packages/0c/41/67e16b243b78b49f4b1650d045b63be187c27d20a76f0f7b8e61e0fcb966/ipykernel-4.6.1.tar.gz
 Source0  : https://pypi.python.org/packages/0c/41/67e16b243b78b49f4b1650d045b63be187c27d20a76f0f7b8e61e0fcb966/ipykernel-4.6.1.tar.gz
 Summary  : IPython Kernel for Jupyter
@@ -48,7 +48,7 @@ python components for the ipykernel package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1492009648
+export SOURCE_DATE_EPOCH=1492011036
 python3 setup.py build -b py3
 
 %install
@@ -63,9 +63,9 @@ echo ----[ mark ]----
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/jupyter/kernels/python3/kernel.json
-/usr/share/jupyter/kernels/python3/logo-32x32.png
-/usr/share/jupyter/kernels/python3/logo-64x64.png
+%exclude /usr/share/jupyter/kernels/python3/kernel.json
+%exclude /usr/share/jupyter/kernels/python3/logo-32x32.png
+%exclude /usr/share/jupyter/kernels/python3/logo-64x64.png
 
 %files python
 %defattr(-,root,root,-)

@@ -1,2 +1,5 @@
 # This file contains the output files that need %exclude. Full path
 # names, one per line.
+/usr/share/jupyter/kernels/python3/logo-64x64.png
+/usr/share/jupyter/kernels/python3/logo-32x32.png
+/usr/share/jupyter/kernels/python3/kernel.json
