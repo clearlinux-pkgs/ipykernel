@@ -2,3 +2,6 @@
 # picked up automatically. One name per line, no whitespace.
 ipython
 pexpect
+jupyter_client
+jupyter_core
+python-dateutil
