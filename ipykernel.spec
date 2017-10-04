@@ -4,14 +4,15 @@
 #
 Name     : ipykernel
 Version  : 4.6.1
-Release  : 6
-URL      : https://pypi.python.org/packages/0c/41/67e16b243b78b49f4b1650d045b63be187c27d20a76f0f7b8e61e0fcb966/ipykernel-4.6.1.tar.gz
-Source0  : https://pypi.python.org/packages/0c/41/67e16b243b78b49f4b1650d045b63be187c27d20a76f0f7b8e61e0fcb966/ipykernel-4.6.1.tar.gz
+Release  : 7
+URL      : http://pypi.debian.net/ipykernel/ipykernel-4.6.1.tar.gz
+Source0  : http://pypi.debian.net/ipykernel/ipykernel-4.6.1.tar.gz
 Summary  : IPython Kernel for Jupyter
 Group    : Development/Tools
 License  : BSD-3-Clause-Clear
-Requires: ipykernel-python
+Requires: ipykernel-python3
 Requires: ipykernel-data
+Requires: ipykernel-python
 BuildRequires : ipython
 BuildRequires : jupyter_client
 BuildRequires : jupyter_core
@@ -38,17 +39,30 @@ data components for the ipykernel package.
 %package python
 Summary: python components for the ipykernel package.
 Group: Default
+Requires: ipykernel-python3
 
 %description python
 python components for the ipykernel package.
+
+
+%package python3
+Summary: python3 components for the ipykernel package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the ipykernel package.
 
 
 %prep
 %setup -q -n ipykernel-4.6.1
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1492011036
+export SOURCE_DATE_EPOCH=1507155293
 python3 setup.py build -b py3
 
 %install
@@ -68,5 +82,8 @@ echo ----[ mark ]----
 %exclude /usr/share/jupyter/kernels/python3/logo-64x64.png
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
