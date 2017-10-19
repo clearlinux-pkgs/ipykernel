@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 4.6.1
-Release  : 7
+Release  : 8
 URL      : http://pypi.debian.net/ipykernel/ipykernel-4.6.1.tar.gz
 Source0  : http://pypi.debian.net/ipykernel/ipykernel-4.6.1.tar.gz
 Summary  : IPython Kernel for Jupyter
