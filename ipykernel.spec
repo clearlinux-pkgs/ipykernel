@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 4.7.0
-Release  : 9
+Release  : 10
 URL      : http://pypi.debian.net/ipykernel/ipykernel-4.7.0.tar.gz
 Source0  : http://pypi.debian.net/ipykernel/ipykernel-4.7.0.tar.gz
 Summary  : IPython Kernel for Jupyter
