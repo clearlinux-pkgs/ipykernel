@@ -20,7 +20,7 @@ BuildRequires : pbr
 BuildRequires : pexpect
 BuildRequires : pip
 BuildRequires : python-dateutil
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
