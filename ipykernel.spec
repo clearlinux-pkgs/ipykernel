@@ -4,13 +4,14 @@
 #
 Name     : ipykernel
 Version  : 4.8.2
-Release  : 19
+Release  : 20
 URL      : https://pypi.python.org/packages/52/a6/8cfaaa3a1ccdebe7f3eabcf6969101e32dbdf14bfb2443d1c021130ce23c/ipykernel-4.8.2.tar.gz
 Source0  : https://pypi.python.org/packages/52/a6/8cfaaa3a1ccdebe7f3eabcf6969101e32dbdf14bfb2443d1c021130ce23c/ipykernel-4.8.2.tar.gz
 Summary  : IPython Kernel for Jupyter
 Group    : Development/Tools
 License  : BSD-3-Clause-Clear
 Requires: ipykernel-python3
+Requires: ipykernel-license
 Requires: ipykernel-data
 Requires: ipykernel-python
 BuildRequires : ipython
@@ -20,7 +21,6 @@ BuildRequires : pbr
 BuildRequires : pexpect
 BuildRequires : pip
 BuildRequires : python-dateutil
-
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
@@ -34,6 +34,14 @@ Group: Data
 
 %description data
 data components for the ipykernel package.
+
+
+%package license
+Summary: license components for the ipykernel package.
+Group: Default
+
+%description license
+license components for the ipykernel package.
 
 
 %package python
@@ -62,11 +70,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1519060576
+export SOURCE_DATE_EPOCH=1530396322
 python3 setup.py build -b py3
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/doc/ipykernel
+cp COPYING.md %{buildroot}/usr/share/doc/ipykernel/COPYING.md
 python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -80,6 +90,10 @@ echo ----[ mark ]----
 %exclude /usr/share/jupyter/kernels/python3/kernel.json
 %exclude /usr/share/jupyter/kernels/python3/logo-32x32.png
 %exclude /usr/share/jupyter/kernels/python3/logo-64x64.png
+
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/ipykernel/COPYING.md
 
 %files python
 %defattr(-,root,root,-)
