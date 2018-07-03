@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 4.8.2
-Release  : 21
+Release  : 22
 URL      : https://pypi.python.org/packages/52/a6/8cfaaa3a1ccdebe7f3eabcf6969101e32dbdf14bfb2443d1c021130ce23c/ipykernel-4.8.2.tar.gz
 Source0  : https://pypi.python.org/packages/52/a6/8cfaaa3a1ccdebe7f3eabcf6969101e32dbdf14bfb2443d1c021130ce23c/ipykernel-4.8.2.tar.gz
 Summary  : IPython Kernel for Jupyter
