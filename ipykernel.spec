@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 5.1.0
-Release  : 26
+Release  : 27
 URL      : https://files.pythonhosted.org/packages/11/0b/95330660f8cc5d63428b9886c800ea8d68842fd866389cf579acca4915be/ipykernel-5.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/0b/95330660f8cc5d63428b9886c800ea8d68842fd866389cf579acca4915be/ipykernel-5.1.0.tar.gz
 Summary  : IPython Kernel for Jupyter
@@ -73,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539106458
+export SOURCE_DATE_EPOCH=1539109117
 python3 setup.py build
 
 %install
