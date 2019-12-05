@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 5.1.3
-Release  : 34
+Release  : 35
 URL      : https://files.pythonhosted.org/packages/b1/4e/288d4f30d1f121809a0f0df78373ef8b2d9eea9d7eb879cddb0b074af4d1/ipykernel-5.1.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b1/4e/288d4f30d1f121809a0f0df78373ef8b2d9eea9d7eb879cddb0b074af4d1/ipykernel-5.1.3.tar.gz
 Summary  : IPython Kernel for Jupyter
@@ -60,13 +60,14 @@ python3 components for the ipykernel package.
 
 %prep
 %setup -q -n ipykernel-5.1.3
+cd %{_builddir}/ipykernel-5.1.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571841390
+export SOURCE_DATE_EPOCH=1575552590
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
