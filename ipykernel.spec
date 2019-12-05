@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 5.1.3
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/b1/4e/288d4f30d1f121809a0f0df78373ef8b2d9eea9d7eb879cddb0b074af4d1/ipykernel-5.1.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b1/4e/288d4f30d1f121809a0f0df78373ef8b2d9eea9d7eb879cddb0b074af4d1/ipykernel-5.1.3.tar.gz
 Summary  : IPython Kernel for Jupyter
