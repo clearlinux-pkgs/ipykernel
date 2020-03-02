@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 5.1.4
-Release  : 37
+Release  : 38
 URL      : https://files.pythonhosted.org/packages/3a/a4/335439bbaaccfe9d88e09f3df6ba391938a2e3e175ec92ff040462125c68/ipykernel-5.1.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3a/a4/335439bbaaccfe9d88e09f3df6ba391938a2e3e175ec92ff040462125c68/ipykernel-5.1.4.tar.gz
 Summary  : IPython Kernel for Jupyter
@@ -28,8 +28,7 @@ BuildRequires : tornado
 BuildRequires : traitlets
 
 %description
-# IPython Kernel for Jupyter
-This package provides the IPython kernel for Jupyter.
+The IPython kernel for Jupyter
 
 %package license
 Summary: license components for the ipykernel package.
@@ -52,6 +51,7 @@ python components for the ipykernel package.
 Summary: python3 components for the ipykernel package.
 Group: Default
 Requires: python3-core
+Provides: pypi(ipykernel)
 
 %description python3
 python3 components for the ipykernel package.
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580139886
+export SOURCE_DATE_EPOCH=1583159198
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
