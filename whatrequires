@@ -5,3 +5,4 @@ jupyter
 nbval
 notebook
 qtconsole
+spyder-kernels
