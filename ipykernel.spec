@@ -4,7 +4,7 @@
 #
 Name     : ipykernel
 Version  : 5.4.2
-Release  : 53
+Release  : 54
 URL      : https://files.pythonhosted.org/packages/9d/e7/8a9f328bdf5d2325d7e5d2e3097138f91a4971ccb245fa430752ca61c9a7/ipykernel-5.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9d/e7/8a9f328bdf5d2325d7e5d2e3097138f91a4971ccb245fa430752ca61c9a7/ipykernel-5.4.2.tar.gz
 Summary  : IPython Kernel for Jupyter
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1607738786
+export SOURCE_DATE_EPOCH=1608011205
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
