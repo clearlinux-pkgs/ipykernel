@@ -2,3 +2,4 @@
 # undesirable. One entry per line, no whitespace.
 IPython.core.profiledir-python
 appnope
+importlib-metadata

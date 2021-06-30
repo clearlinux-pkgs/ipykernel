@@ -6,3 +6,4 @@ jupyter_client
 jupyter_core
 ipython_genutils
 python-dateutil
+importlib_metadata
