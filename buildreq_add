@@ -1,9 +1,9 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+importlib_metadata
 ipython
-pexpect
+ipython_genutils
 jupyter_client
 jupyter_core
-ipython_genutils
+pexpect
 python-dateutil
-importlib_metadata

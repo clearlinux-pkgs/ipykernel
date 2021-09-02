@@ -1,5 +1,5 @@
 PKG_NAME := ipykernel
-URL = https://files.pythonhosted.org/packages/d0/40/34a363757519c295218d6b1ceba93d1af976821d9f36672512e9401b7c94/ipykernel-6.2.0.tar.gz
+URL = https://files.pythonhosted.org/packages/79/fc/89a1f0f560cf082226ed404d7a876c77519f6af84fd482551c862183c509/ipykernel-6.3.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
