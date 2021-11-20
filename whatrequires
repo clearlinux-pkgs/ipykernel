@@ -4,6 +4,4 @@ ipython
 jupyter
 jupyter_console
 nbval
-notebook
 qtconsole
-spyder-kernels
