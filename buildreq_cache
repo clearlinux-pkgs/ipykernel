@@ -1,6 +1,4 @@
-6.5.1
+6.6.0
 pypi(matplotlib_inline)
-pypi(myst_parser)
-pypi(sphinxcontrib_github_alt)
 pypi(tornado)
 pypi(traitlets)
